@@ -1,0 +1,1 @@
+# adalo-qr-scanner
