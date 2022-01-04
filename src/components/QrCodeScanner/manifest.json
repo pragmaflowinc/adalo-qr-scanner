@@ -1,0 +1,27 @@
+{
+  "displayName": "QR Code Scanner",
+  "defaultWidth": 375,
+  "defaultHeight": 600,
+  "components": "./index.js",
+  "icon": "./thumbnail.png",
+  "resizeX": true,
+  "resizeY": true,
+  "props": [
+    {
+      "name": "useActions",
+      "displayName": "Actions when a QR Code is Scanned",
+      "type": "action",
+      "helpText": "You can access the QR Code data through Magic Text in these actions",
+      "arguments": [
+        {
+          "type": "text",
+          "displayName": "Data"
+        },
+        {
+          "type": "text",
+          "displayName": "Encoded Data"
+        }
+      ]
+    }
+  ]
+}
