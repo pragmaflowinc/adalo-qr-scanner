@@ -8,6 +8,24 @@
   "resizeY": true,
   "props": [
     {
+      "name": "displayInEditorMode",
+      "displayName": "Run QR Scanner in editor",
+      "type": "boolean"
+    },
+    {
+      "name": "cameraType",
+      "displayName": "Which camera would you like to use?",
+      "type": "text",
+      "defaultValue": "front",
+      "control": {
+        "type": "menu",
+        "options": [
+          { "label": "Front", "value": "front" },
+          { "label": "Rear", "value": "rear" }
+        ]
+      }
+    },
+    {
       "name": "useActions",
       "displayName": "Actions when a QR Code is Scanned",
       "type": "action",
@@ -20,6 +38,17 @@
         {
           "type": "text",
           "displayName": "Encoded Data"
+        }
+      ]
+    },
+    {
+      "name": "onError",
+      "displayName": "Actions when an error occured",
+      "type": "action",
+      "arguments": [
+        {
+          "type": "text",
+          "displayName": "Error information"
         }
       ]
     }

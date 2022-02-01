@@ -1,7 +1,7 @@
 {
-  "name": "pf-qr-code-scanner",
+  "name": "pf-qr-code-scanner-test",
   "description": "QR Code Scanner for Adalo",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "main": "index.js",
   "license": "ISC",
   "author": "Steven McKeown",
@@ -12,7 +12,7 @@
   },
   "adalo": {
     "logo": "./logo.png",
-    "displayName": "QR Code Scanner",
+    "displayName": "QR Code Scanner Test",
     "components": [
       {
         "name": "QrCodeScanner",
@@ -30,8 +30,10 @@
     "react-native-web": "^0.9.5"
   },
   "dependencies": {
-    "react-native-camera": "4.2.1",
     "react-native-permissions": "^3.0.0-beta.2",
-    "react-native-qrcode-scanner": "^1.4.1"
+    "react-native-reanimated": "^2.3.1",
+    "react-native-vision-camera": "^2.12.0",
+    "react-qr-scanner": "^1.0.0-alpha.7",
+    "vision-camera-qrcode-scanner": "^0.1.4"
   }
 }
